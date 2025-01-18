@@ -1,0 +1,11 @@
+The solution is to avoid using `@apply` with pseudo-selectors within component styles. Instead, directly apply the classes to the element:
+
+```html
+<div class="bg-gray-100">
+  <button class="p-2 rounded hover:bg-gray-200">
+    Hover me
+  </button>
+</div>
+```
+
+This ensures the pseudo-selector styles are correctly applied.
