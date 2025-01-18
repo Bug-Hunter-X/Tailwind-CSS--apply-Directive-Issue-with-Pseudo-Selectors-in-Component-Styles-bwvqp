@@ -1,0 +1,11 @@
+This bug occurs when using Tailwind CSS's `@apply` directive with a class that contains a pseudo-selector, like `hover`, `focus`, or `active`.  The `@apply` directive might not correctly apply the styles when used within a component's style tag. For example:
+
+```html
+<div class="bg-gray-100">
+  <button class="@apply hover:bg-gray-200 p-2 rounded">
+    Hover me
+  </button>
+</div>
+```
+
+This might not change the background color on hover.
